@@ -13,6 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,6 +40,7 @@ set smartindent
 
 set noerrorbells
 set visualbell
+set noshowmode
 
 set laststatus=2 " show the satus line all the time
 
@@ -48,4 +50,6 @@ if has('mouse')
 	set mouse=a
 endif
 
-map <C-n> :NERDTreeToggle<CR>
+map <silent> <leader>n :NERDTreeToggle<CR>
+map <silent> <leader>y :NERDTreeFind<CR>
+
