@@ -41,3 +41,4 @@ set visualbell
 
 set laststatus=2 " show the satus line all the time
 
+let g:airline_powerline_fonts = 1
