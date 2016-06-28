@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,3 +43,9 @@ set visualbell
 set laststatus=2 " show the satus line all the time
 
 let g:airline_powerline_fonts = 1
+
+if has('mouse')
+	set mouse=a
+endif
+
+map <C-n> :NERDTreeToggle<CR>
